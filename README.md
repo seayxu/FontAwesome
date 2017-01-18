@@ -1,6 +1,8 @@
 # FontAwesomeNet
 Font-Awesome-4.7.0 for Windows Forms
 
+![sample application][sample]
+
 # 开发环境
 
 Windows 10 + Visual Studio 2013 + .NetFramework 3.5
@@ -33,3 +35,5 @@ Icon ico = FontAwesome.GetIcon(0xf188);
 [MIT License](https://github.com/xeayxu/FontAwesome/blob/master/LICENSE)
 
 *如有问题,欢迎指出*
+
+[sample]:./assets/sample.jpg
