@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>FontAwesomeNet</id>
-        <version>1.0.0-pre</version>
+        <version>1.0.0-pre1</version>
         <title>FontAwesome for .NET</title>
         <authors>seayxu</authors>
         <owners>seayxu</owners>
@@ -13,7 +13,7 @@
         <description>Font-Awesome-4.7.0 for Windows Forms and WPF</description>
         <releaseNotes>Font-Awesome-4.7.0 for Windows Forms and WPF v1.0.0</releaseNotes>
         <copyright>Copyright Seay 2017</copyright>
-        <tags>FontAwesome,FontAwesomeNet,Windows Forms,WPF</tags>
+        <tags>FontAwesome,FontAwesomeNet,WindowsForms,WPF</tags>
     </metadata>
   <files>
     <file src="..\src\FontAwesome\bin\Release\FontAwesomeNet.dll" target="lib\net35\FontAwesomeNet.dll" />
