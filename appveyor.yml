@@ -27,6 +27,6 @@ deploy:
   api_key:
     secure: BN1qIm8VoXCZjw+wjEuF2CUxl0C/tp+dI2Iu398n7V6yyza5sJcO2egiUHQQ8Y4fIgXVoumdc5Em+LTNf+ex3i+CbCLyHWl4mppmaZif4xo=
   skip_symbols: true
-  artifact: '*.nupkg'
+  artifact: '**\*.nupkg'
   on:
     APPVEYOR_REPO_TAG: true
