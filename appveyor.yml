@@ -26,9 +26,13 @@ deploy:
     secure: s388/c8yQWnGyZ9v9cUDfBe4ud6MFl/ouUEEBruiN5j5+LjSQ4giGKMKuLuvglS1
   skip_symbols: true
   artifact: /.*\.nupkg/
+  on:
+    APPVEYOR_REPO_TAG: true
 - provider: NuGet
   server: https://www.myget.org/F/seay/api/v2/package
   api_key:
     secure: CKm5m2qGYNYnh5yDUE2zKfN+JKBmO5xmtG80AP0yni9yPBqDOaRQ48Y/4k8KGo2y
   skip_symbols: true
   artifact: /.*\.nupkg/
+  on:
+    APPVEYOR_REPO_TAG: true
