@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过下列属性集
 // 控制。更改这些属性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Font-Awesome-4.7.0 for Windows Forms and WPF")]
+[assembly: AssemblyTitle("FontAwesome for .NET")]
 [assembly: AssemblyDescription("Font-Awesome-4.7.0 for Windows Forms and WPF")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("http://seay.me")]

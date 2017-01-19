@@ -34,7 +34,7 @@ Icon ico = FontAwesome.GetIcon(0xf188);
 
 # 协议
 
-[MIT License](https://github.com/xeayxu/FontAwesome/blob/master/LICENSE)
+[MIT License](https://github.com/seayxu/FontAwesome/blob/master/LICENSE)
 
 *如有问题,欢迎指出*
 

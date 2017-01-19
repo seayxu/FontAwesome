@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>FontAwesomeNet</id>
+        <version>1.0.0-pre</version>
+        <title>FontAwesome for .NET</title>
+        <authors>seayxu</authors>
+        <owners>seayxu</owners>
+        <licenseUrl>https://github.com/seayxu/FontAwesome/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/seayxu/FontAwesome</projectUrl>
+        <iconUrl>https://github.com/seayxu/FontAwesome/raw/master/assets/font.ico</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Font-Awesome-4.7.0 for Windows Forms and WPF</description>
+        <releaseNotes>Font-Awesome-4.7.0 for Windows Forms and WPF v1.0.0</releaseNotes>
+        <copyright>Copyright Seay 2017</copyright>
+        <tags>FontAwesome,FontAwesomeNet,Windows Forms,WPF</tags>
+    </metadata>
+  <files>
+    <file src="..\src\FontAwesome\bin\Release\FontAwesomeNet.dll" target="lib\net35\FontAwesomeNet.dll" />
+  </files>
+</package>
