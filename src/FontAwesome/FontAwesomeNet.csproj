@@ -8,8 +8,8 @@
     <ProjectGuid>{27FB5F70-E10E-4E9D-943E-D7FBA56F78FA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FontAwesome</RootNamespace>
-    <AssemblyName>FontAwesome</AssemblyName>
+    <RootNamespace>FontAwesomeNet</RootNamespace>
+    <AssemblyName>FontAwesomeNet</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>

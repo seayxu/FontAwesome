@@ -2,8 +2,9 @@
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using FontAwesomeNet;
 
-namespace FontAwesome.Sample
+namespace FontAwesomeNet.Sample
 {
     public partial class FormSample : Form
     {

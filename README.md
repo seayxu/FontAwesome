@@ -1,5 +1,7 @@
 # FontAwesomeNet
-Font-Awesome-4.7.0 for Windows Forms
+Font-Awesome-4.7.0 for Windows Forms and WPF
+
+[![Build status](https://ci.appveyor.com/api/projects/status/7ys5urml957liad5?svg=true)](https://ci.appveyor.com/project/seayxu/fontawesome)
 
 ![sample application][sample]
 
@@ -13,7 +15,7 @@ Windows 10 + Visual Studio 2013 + .NetFramework 3.5
 
 # 示例
 
-1. 安装 Font-Awesome-4.7.0 字体，官网是：http://fontawesome.io 。
+1. 安装 Font-Awesome-4.7.0 字体：[fontawesome-webfont-4.7.0.ttf][fontdl]，官网是：http://fontawesome.io 。
 
 2. 添加 FontAwesomeNet 引用。
 
@@ -37,3 +39,4 @@ Icon ico = FontAwesome.GetIcon(0xf188);
 *如有问题,欢迎指出*
 
 [sample]:./assets/sample.jpg
+[fontdl]:https://github.com/FortAwesome/Font-Awesome/raw/v4.7.0/fonts/fontawesome-webfont.ttf

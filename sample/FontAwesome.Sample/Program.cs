@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace FontAwesome.Sample
+namespace FontAwesomeNet.Sample
 {
     static class Program
     {

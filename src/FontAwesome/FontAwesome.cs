@@ -4,10 +4,10 @@ using System.Drawing;
 using System.IO;
 using System.Drawing.Imaging;
 
-//
+//fontawesome
+//http://fontawesome.io
 //http://fontawesome.io/cheatsheet/
-//
-namespace FontAwesome
+namespace FontAwesomeNet
 {
     /// <summary>
     /// FontAwesome static helper object,default icon size is 32,no border,backcolor is Color.Transparent,forecolor is Color.Black,border color is Color.Gray.

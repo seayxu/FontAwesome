@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FontAwesomeNet.Sample.Properties {
+namespace FontAwesomeNet.Wpf.Sample.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace FontAwesomeNet.Sample.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FontAwesomeNet.Sample.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FontAwesomeNet.Wpf.Sample.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

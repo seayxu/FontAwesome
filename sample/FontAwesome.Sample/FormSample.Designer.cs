@@ -1,4 +1,4 @@
-﻿namespace FontAwesome.Sample
+﻿namespace FontAwesomeNet.Sample
 {
     partial class FormSample
     {

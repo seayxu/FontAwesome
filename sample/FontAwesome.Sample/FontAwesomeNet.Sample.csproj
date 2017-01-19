@@ -8,8 +8,8 @@
     <ProjectGuid>{9C68D403-7404-42E8-97A7-76725DF7C4DA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FontAwesome.Sample</RootNamespace>
-    <AssemblyName>FontAwesome.Sample</AssemblyName>
+    <RootNamespace>FontAwesomeNet.Sample</RootNamespace>
+    <AssemblyName>FontAwesomeNet.Sample</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
@@ -91,9 +91,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\FontAwesome\FontAwesome.csproj">
+    <ProjectReference Include="..\..\src\FontAwesome\FontAwesomeNet.csproj">
       <Project>{27FB5F70-E10E-4E9D-943E-D7FBA56F78FA}</Project>
-      <Name>FontAwesome</Name>
+      <Name>FontAwesomeNet</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

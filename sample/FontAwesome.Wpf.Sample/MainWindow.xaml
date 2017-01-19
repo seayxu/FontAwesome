@@ -1,0 +1,31 @@
+﻿<Window x:Class="FontAwesomeNet.Wpf.Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FontAwesome示例" Height="534" Width="517" Icon="font.ico" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <GroupBox Header="设置" Height="120" Margin="5,2,5,0" Name="GbSetting" VerticalAlignment="Top">
+            <Grid>
+                <Label HorizontalAlignment="Left" Margin="6,6,0,0" Name="Label1" Width="70" Height="23.76" VerticalAlignment="Top">图标名称：</Label>
+                <ComboBox HorizontalAlignment="Left" Margin="82,6,0,0" Name="CmbFontAwesomeType" Width="120" Height="23.76" VerticalAlignment="Top" SelectionChanged="cmbFontAwesomeType_SelectionChanged" />
+                <Label HorizontalAlignment="Left" Margin="235,5,0,0" Name="Label5" Width="70" Height="23" VerticalAlignment="Top">图标大小：</Label>
+                <Slider Height="22" HorizontalAlignment="Left" Margin="311,6,0,0" Name="Slider1" VerticalAlignment="Top" Width="120" Minimum="16" Maximum="512" Value="32" ValueChanged="Slider1_ValueChanged" />
+                <Label HorizontalAlignment="Left" Margin="445,2,0,0" x:Name="LabelSize" Width="32" Height="28" VerticalAlignment="Top" RenderTransformOrigin="10.9,0.565" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="999"/>
+                <Label HorizontalAlignment="Left" Margin="6,36,0,0" Name="Label2" Width="70" Height="23" VerticalAlignment="Top">前景颜色：</Label>
+                <ComboBox HorizontalAlignment="Left" Margin="82,35,0,0" Name="CmbForeColor" Width="120" Height="23.76" VerticalAlignment="Top" />
+                <CheckBox HorizontalAlignment="Left" Margin="237,42,0,40" Name="CbShowBorder" Width="120">显示边框</CheckBox>
+                <Label HorizontalAlignment="Left" Margin="6,0,0,6.76" Name="Label3" Width="70" Height="24" VerticalAlignment="Bottom">背景颜色：</Label>
+                <ComboBox HorizontalAlignment="Left" Margin="81,67.24,0,0" Name="CmbBackColor" Width="120" Height="23.76" VerticalAlignment="Top" />
+                <Label HorizontalAlignment="Left" Margin="235,67.24,0,0" Name="Label4" Width="70" Height="24.76" VerticalAlignment="Top">边框颜色：</Label>
+                <ComboBox HorizontalAlignment="Left" Margin="311,67.24,0,0" Name="CmbBorderColor"  Width="120" Height="23.76" VerticalAlignment="Top" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="预览" Margin="5,126,5,25" Name="GbPreview" VerticalAlignment="Stretch"  HorizontalAlignment="Stretch">
+            <Grid Name="Image" VerticalAlignment="Stretch"  HorizontalAlignment="Stretch"/>
+        </GroupBox>
+        <Grid Height="24" Margin="5,458,5,0" VerticalAlignment="Bottom" HorizontalAlignment="Stretch">
+            <Label Content="FontAwesome Version：4.7.0" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>
+            <Label Content="Helper Version：1.0.0" HorizontalAlignment="Left" Margin="345,0,0,0" VerticalAlignment="Top"/>
+
+        </Grid>
+    </Grid>
+</Window>

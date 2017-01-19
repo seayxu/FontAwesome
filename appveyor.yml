@@ -17,7 +17,7 @@ nuget:
   project_feed: true
   disable_publish_on_pr: true
 build:
-  project: src\FontAwesome\FontAwesome.csproj
+  project: src\FontAwesome\FontAwesomeNet.csproj
   publish_nuget: true
   verbosity: minimal
 test: off

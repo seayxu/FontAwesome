@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过下列属性集
 // 控制。更改这些属性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Font-Awesome-4.7.0 for Windows Forms")]
-[assembly: AssemblyDescription("Font-Awesome-4.7.0 for Windows Forms")]
+[assembly: AssemblyTitle("Font-Awesome-4.7.0 for Windows Forms and WPF")]
+[assembly: AssemblyDescription("Font-Awesome-4.7.0 for Windows Forms and WPF")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("http://seay.me")]
-[assembly: AssemblyProduct("FontAwesome")]
+[assembly: AssemblyProduct("FontAwesomeNet")]
 [assembly: AssemblyCopyright("Copyright Seay ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
