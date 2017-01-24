@@ -1,5 +1,5 @@
 @echo off
 cd .nuget
-nuget update /self
+@rem NuGet.exe update /self
 NuGet.exe pack FontAwesomeNet.nuspec
 cd ..

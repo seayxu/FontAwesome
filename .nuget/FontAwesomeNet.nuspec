@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>FontAwesomeNet</id>
-        <version>1.0.0</version>
-        <title>FontAwesome for .NET</title>
+        <version>1.1.0</version>
+        <title>Font-Awesome for .NET</title>
         <authors>seayxu</authors>
         <owners>seayxu</owners>
         <licenseUrl>https://github.com/seayxu/FontAwesome/blob/master/LICENSE</licenseUrl>
@@ -11,11 +11,17 @@
         <iconUrl>https://github.com/seayxu/FontAwesome/raw/master/assets/font.ico</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Font-Awesome-4.7.0 for Windows Forms and WPF</description>
-        <releaseNotes>Font-Awesome-4.7.0 for Windows Forms and WPF v1.0.0</releaseNotes>
+        <releaseNotes>
+		Font-Awesome-4.7.0 for Windows Forms and WPF v1.1.0
+
+		Support self-contained font files, no need to install fonts to the system.
+		</releaseNotes>
         <copyright>Copyright Seay 2017</copyright>
         <tags>FontAwesome,FontAwesomeNet,WindowsForms,WPF</tags>
     </metadata>
   <files>
     <file src="..\src\FontAwesome\bin\Release\FontAwesomeNet.dll" target="lib\net35\FontAwesomeNet.dll" />
+    <file src="..\assets\font\fontawesome-webfont.ttf" target="content\font\fontawesome-webfont.ttf" />
+	<file src="install.ps1" target="tools\install.ps1" />
   </files>
 </package>

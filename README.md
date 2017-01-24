@@ -1,5 +1,5 @@
 # FontAwesomeNet
-Font-Awesome-4.7.0 for Windows Forms and WPF
+Font-Awesome for .NET(Windows Forms and WPF)
 
 [![AppVeyor build status](https://img.shields.io/appveyor/ci/seayxu/fontawesome.svg?label=appveyor&style=flat-square)](https://ci.appveyor.com/project/seayxu/fontawesome/) [![NuGet](https://img.shields.io/nuget/v/FontAwesomeNet.svg?label=nuget&style=flat-square)](https://www.nuget.org/packages/FontAwesomeNet/) [![MyGet](https://img.shields.io/myget/seay/v/FontAwesomeNet.svg?label=myget&style=flat-square)](https://www.myget.org/Package/Details/seay?packageType=nuget&packageId=FontAwesomeNet)
 
@@ -17,9 +17,12 @@ Windows 10 + Visual Studio 2013 + .NetFramework 3.5
 
 > 可以在 Windows Forms 和 WPF 程序中使用。
 
-1. 安装 Font-Awesome-4.7.0 字体：[fontawesome-webfont-4.7.0.ttf][fontdl]，官网是：[http://fontawesome.io][fa] 。
+1. 添加类库，可以通过 nuget 安装。
+```
+PM Install-Package FontAwesomeNet
+```
 
-2. 添加 FontAwesomeNet 引用，命名空间是：**FontAwesomeNet**。
+2. 添加 FontAwesomeNet 命名空间：**FontAwesomeNet**。
 
 3. 示例
 

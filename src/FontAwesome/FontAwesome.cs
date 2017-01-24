@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Drawing.Imaging;
+using System.Drawing.Text;
+using System.Linq;
 
 //fontawesome
 //http://fontawesome.io
@@ -25,6 +27,19 @@ namespace FontAwesomeNet
     public class FontAwesome
     {
         #region Fileds
+        /// <summary>
+        /// FontAwesome Name
+        /// </summary>
+        private static readonly string FontAwesomeName = "fontawesome-webfont.ttf";
+        /// <summary>
+        /// FontAwesome Location
+        /// </summary>
+        private static readonly string FontAwesomeLocation = "font\\";
+        /// <summary>
+        /// FontCollection object
+        /// </summary>
+        private static readonly PrivateFontCollection FontCollection = new PrivateFontCollection();
+
         /// <summary>
         /// FontAwesome Version
         /// </summary>
@@ -64,6 +79,17 @@ namespace FontAwesomeNet
             BackColer = Color.Transparent;
             ForeColer = Color.Black;
             BorderColer = Color.Gray;
+            string path = FontAwesomeLocation + FontAwesomeName;
+            if (File.Exists(path))
+            {
+                FontCollection.AddFontFile(path);
+            }
+            else
+            {
+                throw new FileNotFoundException("FontAwesome font file not found", path);
+            }
+            
+            FontCollection.AddFontFile(FontAwesomeLocation + FontAwesomeName);
         }
 
         #endregion
@@ -103,7 +129,7 @@ namespace FontAwesomeNet
             {
                 //convert font code
                 string unicode = char.ConvertFromUtf32(iconText);
-                Font font = new Font("FontAwesome", IconSize * (3f / 4f), FontStyle.Regular, GraphicsUnit.Point);
+                Font font = GetFont();// new Font("FontAwesome", IconSize * (3f / 4f), FontStyle.Regular, GraphicsUnit.Point);
 
                 //setting graphics
                 g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
@@ -150,7 +176,7 @@ namespace FontAwesomeNet
                 using (Graphics g = Graphics.FromImage(bmp))
                 {
                     string unicode = char.ConvertFromUtf32(iconText);
-                    Font font = new Font("FontAwesome", IconSize * (3f / 4f), FontStyle.Regular, GraphicsUnit.Point);
+                    Font font = GetFont(); //new Font("FontAwesome", IconSize * (3f / 4f), FontStyle.Regular, GraphicsUnit.Point);
                     SizeF size = g.MeasureString(unicode, font);
                     return size.ToSize();
                 }
@@ -249,55 +275,69 @@ namespace FontAwesomeNet
 
                 Stream outStraem = new MemoryStream();
                 BinaryWriter writer = new BinaryWriter(outStraem);
-                if (outStraem != null && writer != null)
+                if (outStraem.Length<=0)
                 {
-                    // 0-1 reserved, 0
-                    writer.Write((byte) 0);
-                    writer.Write((byte) 0);
-
-                    // 2-3 image type, 1 = icon, 2 = cursor
-                    writer.Write((short) 1);
-
-                    // 4-5 number of images
-                    writer.Write((short) 1);
-
-                    // image entry 1
-                    // 0 image width
-                    writer.Write((byte) size);
-                    // 1 image height
-                    writer.Write((byte) size);
-
-                    // 2 number of colors
-                    writer.Write((byte) 0);
-
-                    // 3 reserved
-                    writer.Write((byte) 0);
-
-                    // 4-5 color planes
-                    writer.Write((short) 0);
-
-                    // 6-7 bits per pixel
-                    writer.Write((short) 32);
-
-                    // 8-11 size of image data
-                    writer.Write((int) tmpStream.Length);
-
-                    // 12-15 offset of image data
-                    writer.Write((int) (6 + 16));
-
-                    // write image data
-                    // png data must contain the whole png data file
-                    writer.Write(tmpStream.ToArray());
-
-                    writer.Flush();
-                    writer.Seek(0, SeekOrigin.Begin);
-                    icon = new Icon(outStraem);
-                    outStraem.Dispose();
+                    return null;
                 }
+                // 0-1 reserved, 0
+                writer.Write((byte) 0);
+                writer.Write((byte) 0);
+
+                // 2-3 image type, 1 = icon, 2 = cursor
+                writer.Write((short) 1);
+
+                // 4-5 number of images
+                writer.Write((short) 1);
+
+                // image entry 1
+                // 0 image width
+                writer.Write((byte) size);
+                // 1 image height
+                writer.Write((byte) size);
+
+                // 2 number of colors
+                writer.Write((byte) 0);
+
+                // 3 reserved
+                writer.Write((byte) 0);
+
+                // 4-5 color planes
+                writer.Write((short) 0);
+
+                // 6-7 bits per pixel
+                writer.Write((short) 32);
+
+                // 8-11 size of image data
+                writer.Write((int) tmpStream.Length);
+
+                // 12-15 offset of image data
+                writer.Write((int) (6 + 16));
+
+                // write image data
+                // png data must contain the whole png data file
+                writer.Write(tmpStream.ToArray());
+
+                writer.Flush();
+                writer.Seek(0, SeekOrigin.Begin);
+                icon = new Icon(outStraem);
+                outStraem.Dispose();
             }
             return icon;
         }
 
+        #endregion
+
+        #region //get font function
+        /// <summary>
+        /// get font function
+        /// </summary>
+        /// <returns></returns>
+        private static Font GetFont()
+        {
+            var size = IconSize * (3f / 4f);
+            var font = new Font(FontCollection.Families[0], size, FontStyle.Regular, GraphicsUnit.Point);
+            return font;
+        }
         #endregion
 
         #region //Type Dictionary
