@@ -17,14 +17,14 @@ Windows 10 + Visual Studio 2013 + .NetFramework 3.5
 
 > 可以在 Windows Forms 和 WPF 程序中使用。
 
-1. 添加类库，可以通过 nuget 安装。
+- 添加类库，可以通过 nuget 安装。
 ```
 PM Install-Package FontAwesomeNet
 ```
 
-2. 添加 FontAwesomeNet 命名空间：**FontAwesomeNet**。
+- 添加 FontAwesomeNet 命名空间：**FontAwesomeNet**。
 
-3. 示例
+- 示例
 
 ``` cs
 // get FontAwesome icon class names(type is Dictionary<string, int>)
