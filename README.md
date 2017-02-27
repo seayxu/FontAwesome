@@ -53,3 +53,4 @@ Icon ico = FontAwesome.GetIcon(val);//0xf004
 [fa]:http://fontawesome.io
 [sample]:https://github.com/seayxu/FontAwesome/raw/master/assets/sample.jpg
 [fontdl]:https://github.com/FortAwesome/Font-Awesome/raw/v4.7.0/fonts/fontawesome-webfont.ttf
+write something for the pull request.
